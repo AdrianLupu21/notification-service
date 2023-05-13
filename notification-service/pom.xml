@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>notification</artifactId>
+        <groupId>com.smartmug</groupId>
+        <version>develop-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>notification-service</artifactId>
+    <version>develop-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+    <properties>
+        <java.version>11</java.version>
+        <revision>develop-SNAPSHOT</revision>
+        <nexus.url.release>http://85.204.43.222:8080/nexus/content/repositories/releases/</nexus.url.release>
+        <nexus.url.snapshot>http://85.204.43.222:8080/nexus/content/repositories/snapshots/</nexus.url.snapshot>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>${nexus.url.release}</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>${nexus.url.snapshot}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.smartmug.interface</groupId>
+            <artifactId>device-notification-resource</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.components</groupId>
+            <artifactId>keycloak-connector</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.interface</groupId>
+            <artifactId>device-configuration-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug</groupId>
+            <artifactId>kafka-connector</artifactId>
+            <version>develop-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>keycloak-connector</artifactId>
+                    <groupId>com.smartmug.components</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug</groupId>
+            <artifactId>device-management-client</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.smartmug.interface</groupId>
+            <artifactId>device-management-model</artifactId>
+            <version>develop-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

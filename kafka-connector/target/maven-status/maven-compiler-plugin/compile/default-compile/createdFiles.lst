@@ -1,0 +1,9 @@
+com/smartmug/kafka/producer/KafkaProducerContextFactory.class
+com/smartmug/kafka/producer/KafkaProducerContext.class
+com/smartmug/kafka/publisher/ForwardTemplateEventPublisher.class
+com/smartmug/kafka/producer/ProducerType.class
+com/smartmug/kafka/error/KafkaConnectorErrorCode.class
+com/smartmug/kafka/event/SendTemplateEvent.class
+com/smartmug/kafka/producer/KafkaProducerContext$KafkaProducerBuilder.class
+com/smartmug/kafka/error/KafkaConnectorError$KafkaConnectorException.class
+com/smartmug/kafka/error/KafkaConnectorError.class

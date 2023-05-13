@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: "85.204.43.222:9092"
+      topic: "test"
+      key-serializerr: "String"
+      value-serializer: "String"

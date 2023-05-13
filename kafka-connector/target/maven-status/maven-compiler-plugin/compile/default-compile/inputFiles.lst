@@ -1,0 +1,7 @@
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/producer/KafkaProducerContext.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/producer/ProducerType.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/publisher/ForwardTemplateEventPublisher.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/error/KafkaConnectorErrorCode.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/error/KafkaConnectorError.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/producer/KafkaProducerContextFactory.java
+/Users/adrianlupu/Downloads/notification/kafka-connector/src/main/java/com/smartmug/kafka/event/SendTemplateEvent.java

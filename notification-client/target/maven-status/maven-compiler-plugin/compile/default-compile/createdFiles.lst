@@ -1,0 +1,6 @@
+com/smartmug/notification/client/impl/DeviceNotificationClientFactory.class
+com/smartmug/notification/client/impl/NotificationServiceClientImpl.class
+com/smartmug/notification/client/spi/NotificationServiceClient.class
+com/smartmug/notification/client/error/NotificationServiceClientError.class
+com/smartmug/notification/client/impl/Authenticator.class
+com/smartmug/notification/client/error/NotificationServiceClientError$NotificationServiceClientException.class
